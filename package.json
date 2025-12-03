@@ -1,0 +1,32 @@
+{
+  "name": "qontak-webhook-service",
+  "version": "1.0.0",
+  "description": "Simple webhook service for Qontak integration",
+  "main": "dist/webhook.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/webhook.js",
+    "dev": "ts-node src/webhook.ts",
+    "dev:watch": "nodemon --exec ts-node src/webhook.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^17.2.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "webhook",
+    "qontak",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT"
+}
