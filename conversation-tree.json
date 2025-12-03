@@ -32,7 +32,7 @@
     "silverstream_menu": {
       "type": "interactive_list",
       "message": {
-        "body": "Nice! Kamu pilih SilverStream ya 💧\n\nAda beberapa info yang bisa aku jelasin:",
+        "body": "Nice! Kamu pilih SilverStream ya 💊\n\nAda beberapa info yang bisa aku jelasin:",
         "lists": {
           "button": "Pilih Opsi",
           "sections": [
@@ -50,6 +50,16 @@
                   "description": "Panduan penggunaan Silverstream"
                 },
                 {
+                  "id": "bisnis",
+                  "title": "Bisnis",
+                  "description": "Bisnis Anda terkait Silverstream"
+                }
+              ]
+            },
+            {
+              "title": "Bantuan dan Dukungan",
+              "rows": [
+                {
                   "id": "konsultasi",
                   "title": "Konsultasi",
                   "description": "Konsultasi Dokter seputar Silverstream"
@@ -58,11 +68,6 @@
                   "id": "keluhan",
                   "title": "Keluhan",
                   "description": "Keluhan Anda terkait Silverstream"
-                },
-                {
-                  "id": "bisnis",
-                  "title": "Bisnis",
-                  "description": "Bisnis Anda terkait Silverstream"
                 }
               ]
             }
@@ -168,9 +173,49 @@
       "fallback": "silverstream_keluhan"
     },
     "silverstream_bisnis": {
+      "type": "interactive_list",
+      "message": {
+        "body": "Ada beberapa info bisnis yang bisa aku bantu! 💼",
+        "lists": {
+          "button": "Pilih Opsi",
+          "sections": [
+            {
+              "title": "Bisnis SilverStream",
+              "rows": [
+                {
+                  "id": "info_distributor",
+                  "title": "Info Distributor",
+                  "description": "Informasi tentang distributor dan reseller"
+                },
+                {
+                  "id": "cara_pembelian",
+                  "title": "Cara Pembelian",
+                  "description": "Beli produk untuk kebutuhan kamu"
+                },
+                {
+                  "id": "jadi_mitra",
+                  "title": "Jadi Mitra",
+                  "description": "Cara jadi distributor/reseller"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "info_distributor": "silverstream_bisnis_info_distributor",
+        "info distributor": "silverstream_bisnis_info_distributor",
+        "cara_pembelian": "bisnis_form_start",
+        "cara pembelian": "bisnis_form_start",
+        "jadi_mitra": "silverstream_bisnis_jadi_mitra",
+        "jadi mitra": "silverstream_bisnis_jadi_mitra"
+      },
+      "fallback": "silverstream_bisnis"
+    },
+    "silverstream_bisnis_info_distributor": {
       "type": "interactive_button",
       "message": {
-        "body": "Tertarik jadi partner bisnis? Keren! 🤝\n\nAyo diskusi peluang bisnisnya:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita excited buat ngobrol sama kamu! 🚀",
+        "body": "Info Distributor & Reseller SilverStream 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk end user\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 812-3456-7890 📞",
         "buttons": [
           {
             "id": "kembali",
@@ -183,11 +228,33 @@
         ]
       },
       "transitions": {
-        "kembali": "silverstream_menu",
+        "kembali": "silverstream_bisnis",
         "menu_utama": "greeting",
         "ke menu utama": "greeting"
       },
-      "fallback": "silverstream_bisnis"
+      "fallback": "silverstream_bisnis_info_distributor"
+    },
+    "silverstream_bisnis_jadi_mitra": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Tertarik jadi Distributor atau Reseller? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing dari kami\n• Training produk gratis\n• Sistem bisnis yang proven\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 811-9876-5432\n📧 Email: partnership@example.com\n\nTim kita excited banget buat ngobrol sama kamu! 🚀",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_bisnis",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_bisnis_jadi_mitra"
     },
     "stimel_menu": {
       "type": "interactive_list",
@@ -210,16 +277,6 @@
                   "description": "Panduan penggunaan Stimel"
                 },
                 {
-                  "id": "konsultasi",
-                  "title": "Konsultasi",
-                  "description": "Konsultasi seputar Stimel"
-                },
-                {
-                  "id": "keluhan",
-                  "title": "Keluhan",
-                  "description": "Keluhan Anda terkait Stimel"
-                },
-                {
                   "id": "terapi",
                   "title": "Terapi",
                   "description": "Terapi Anda terkait Stimel"
@@ -228,6 +285,21 @@
                   "id": "bisnis",
                   "title": "Bisnis",
                   "description": "Bisnis Anda terkait Stimel"
+                }
+              ]
+            },
+            {
+              "title": "Bantuan dan Dukungan",
+              "rows": [
+                {
+                  "id": "konsultasi",
+                  "title": "Konsultasi",
+                  "description": "Konsultasi seputar Stimel"
+                },
+                {
+                  "id": "keluhan",
+                  "title": "Keluhan",
+                  "description": "Keluhan Anda terkait Stimel"
                 }
               ]
             }
@@ -356,9 +428,49 @@
       "fallback": "stimel_terapi"
     },
     "stimel_bisnis": {
+      "type": "interactive_list",
+      "message": {
+        "body": "Ada beberapa info bisnis yang bisa aku bantu! 💼",
+        "lists": {
+          "button": "Pilih Opsi",
+          "sections": [
+            {
+              "title": "Bisnis Stimel",
+              "rows": [
+                {
+                  "id": "info_distributor",
+                  "title": "Info Distributor",
+                  "description": "Informasi tentang distributor dan reseller"
+                },
+                {
+                  "id": "cara_pembelian",
+                  "title": "Cara Pembelian",
+                  "description": "Beli produk untuk kebutuhan kamu"
+                },
+                {
+                  "id": "jadi_mitra",
+                  "title": "Jadi Mitra",
+                  "description": "Cara jadi distributor/reseller"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "transitions": {
+        "info_distributor": "stimel_bisnis_info_distributor",
+        "info distributor": "stimel_bisnis_info_distributor",
+        "cara_pembelian": "bisnis_form_start",
+        "cara pembelian": "bisnis_form_start",
+        "jadi_mitra": "stimel_bisnis_jadi_mitra",
+        "jadi mitra": "stimel_bisnis_jadi_mitra"
+      },
+      "fallback": "stimel_bisnis"
+    },
+    "stimel_bisnis_info_distributor": {
       "type": "interactive_button",
       "message": {
-        "body": "Tertarik kerjasama bisnis Stimel?\n\nAyo kita obrolin peluangnya:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita antusias ngobrolin ini sama kamu! 🤝",
+        "body": "Info Distributor & Reseller Stimel-03 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian alat Stimel dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk rumah sakit/klinik\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 812-3456-7890 📞",
         "buttons": [
           {
             "id": "kembali",
@@ -371,11 +483,33 @@
         ]
       },
       "transitions": {
-        "kembali": "stimel_menu",
+        "kembali": "stimel_bisnis",
         "menu_utama": "greeting",
         "ke menu utama": "greeting"
       },
-      "fallback": "stimel_bisnis"
+      "fallback": "stimel_bisnis_info_distributor"
+    },
+    "stimel_bisnis_jadi_mitra": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Tertarik jadi Distributor atau Reseller Stimel? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing & training\n• Demo unit tersedia\n• After-sales support\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 811-9876-5432\n📧 Email: partnership@example.com\n\nTim kita excited banget buat ngobrol sama kamu! 🚀",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_bisnis",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_bisnis_jadi_mitra"
     },
     "akusehat_menu": {
       "type": "interactive_list",

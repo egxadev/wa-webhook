@@ -120,3 +120,46 @@ export interface ApiResponse {
   data?: any;
   error?: string;
 }
+
+// ============================================================================
+// Form Session Types
+// ============================================================================
+
+export interface FormField {
+  name: string;
+  question: string;
+  type?: 'text' | 'choice';
+  choices?: string[];
+  validation?: (value: string) => boolean;
+  errorMessage?: string;
+}
+
+export interface FormSession {
+  userId: string;
+  formType: string;
+  currentStep: number;
+  data: Record<string, any>;
+  startedAt: Date;
+  lastActivityAt: Date;
+}
+
+export interface PurchaseInquiryData {
+  tipePembeli: 'perusahaan' | 'individu';
+  nama: string;
+  umur: number;
+  jenisKelamin: 'L' | 'P';
+  kota: string;
+  tujuanPembelian: 'end_user' | 'qty_banyak' | 'online' | 'kerjasama_bisnis';
+}
+
+// ============================================================================
+// FAQ Types
+// ============================================================================
+
+export interface FAQQuestion {
+  id: string;
+  question: string;  // Max 24 chars for list title
+  answer: string;
+}
+
+export type ProductType = 'silverstream' | 'stimel' | 'akusehat';
