@@ -1,12 +1,12 @@
 {
-  "version": "1.0",
-  "description": "Conversation tree for Qontak WhatsApp bot with interactive messages",
+  "version": "2.0",
+  "description": "Simple conversation tree for WhatsApp chatbot with 3 products (Silverstream, Stimel, Akusehat)",
   "initial_state": "greeting",
   "states": {
     "greeting": {
       "type": "interactive_button",
       "message": {
-        "body": "Hai! 👋 Selamat datang di SilverStream Sehat! silahkan pilih produk yang ingin anda ketahui:",
+        "body": "Hai! saya Silvia dari Silverstream Sehat 👋\n\n Senang bisa bantu kamu hari ini!\n\nAda 3 produk yang bisa kamu explore nih. Mau tau yang mana dulu?",
         "buttons": [
           {
             "id": "silverstream",
@@ -32,42 +32,37 @@
     "silverstream_menu": {
       "type": "interactive_list",
       "message": {
-        "body": "Oke, anda memilih silverstream, berikut opsi yang bisa anda pilih:",
+        "body": "Nice! Kamu pilih SilverStream ya 💧\n\nAda beberapa info yang bisa aku jelasin:",
         "lists": {
           "button": "Pilih Opsi",
           "sections": [
             {
-              "title": "Informasi Produk",
+              "title": "Informasi Silverstream",
               "rows": [
                 {
                   "id": "penjelasan",
                   "title": "Penjelasan",
-                  "description": "Informasi lengkap tentang produk Silverstream"
+                  "description": "Informasi lengkap tentang Silverstream"
                 },
                 {
                   "id": "cara_penggunaan",
                   "title": "Cara Penggunaan",
-                  "description": "Panduan penggunaan produk Silverstream"
+                  "description": "Panduan penggunaan Silverstream"
                 },
                 {
                   "id": "konsultasi",
                   "title": "Konsultasi",
-                  "description": "Konsultasi dengan ahli kesehatan"
-                }
-              ]
-            },
-            {
-              "title": "Dukungan & Bisnis",
-              "rows": [
+                  "description": "Konsultasi Dokter seputar Silverstream"
+                },
                 {
                   "id": "keluhan",
                   "title": "Keluhan",
-                  "description": "Laporkan keluhan atau masalah produk"
+                  "description": "Keluhan Anda terkait Silverstream"
                 },
                 {
                   "id": "bisnis",
                   "title": "Bisnis",
-                  "description": "Informasi kesempatan bisnis Silverstream"
+                  "description": "Bisnis Anda terkait Silverstream"
                 }
               ]
             }
@@ -77,36 +72,162 @@
       "transitions": {
         "penjelasan": "silverstream_penjelasan",
         "cara_penggunaan": "silverstream_cara_penggunaan",
+        "cara penggunaan": "silverstream_cara_penggunaan",
         "konsultasi": "silverstream_konsultasi",
         "keluhan": "silverstream_keluhan",
         "bisnis": "silverstream_bisnis"
       },
       "fallback": "silverstream_menu"
     },
+    "silverstream_penjelasan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Jadi gini, SilverStream itu cairan perawatan luka yang multifungsi banget! ✨\n\nFungsinya:\n• Bersihin luka\n• Melembapkan\n• Kurangin risiko infeksi\n• Hilangin bau ga enak\n• Percepat penyembuhan\n\nCocok buat berbagai jenis luka:\n- Luka operasi\n- Luka diabetes\n- Luka bakar ringan\n- Luka tekan\n- Luka kronis lainnya\n\nRahasianya? Kandungan ion perak yang bantu menenangkan dan dukung pertumbuhan jaringan baru 🌟",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_penjelasan"
+    },
+    "silverstream_cara_penggunaan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Gampang kok cara pakainya! 😊\n\n1️⃣ Semprot/tetesin SilverStream ke area luka\n\n2️⃣ Diamkan 5-10 menit (ga perlu dibilas ya!)\n\n3️⃣ Basahin kasa steril pake SilverStream, terus tempel di luka\n\n4️⃣ Tutup pake balutan kering\n\n5️⃣ Ulangi 1-2x sehari atau sesuai saran dokter\n\nPenting: Selalu ikuti anjuran tenaga medis kamu ya! 💙",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_cara_penggunaan"
+    },
+    "silverstream_konsultasi": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Mau konsultasi langsung sama dokter? Boleh banget! 👨‍⚕️\n\nHubungi tim kami:\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita siap bantu kamu! 💬",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_konsultasi"
+    },
+    "silverstream_keluhan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Ada keluhan? Tenang, kita dengerin kok! 🙏\n\nFeedback kamu penting banget buat kita. Yuk cerita:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita bakal bantu cariin solusi terbaik! 💪",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_keluhan"
+    },
+    "silverstream_bisnis": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Tertarik jadi partner bisnis? Keren! 🤝\n\nAyo diskusi peluang bisnisnya:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita excited buat ngobrol sama kamu! 🚀",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "silverstream_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "silverstream_bisnis"
+    },
     "stimel_menu": {
       "type": "interactive_list",
       "message": {
-        "body": "Oke, anda memilih stimel, berikut opsi yang bisa anda pilih:",
+        "body": "Bagus! Kamu pilih Stimel-03 ya ⚡\n\nMau tau info yang mana nih?",
         "lists": {
           "button": "Pilih Opsi",
           "sections": [
             {
-              "title": "Informasi Produk",
+              "title": "Informasi Stimel",
               "rows": [
                 {
                   "id": "penjelasan",
                   "title": "Penjelasan",
-                  "description": "Informasi lengkap tentang produk Stimel"
+                  "description": "Informasi lengkap tentang Stimel"
                 },
                 {
                   "id": "cara_penggunaan",
                   "title": "Cara Penggunaan",
-                  "description": "Panduan penggunaan produk Stimel"
+                  "description": "Panduan penggunaan Stimel"
+                },
+                {
+                  "id": "konsultasi",
+                  "title": "Konsultasi",
+                  "description": "Konsultasi seputar Stimel"
+                },
+                {
+                  "id": "keluhan",
+                  "title": "Keluhan",
+                  "description": "Keluhan Anda terkait Stimel"
                 },
                 {
                   "id": "terapi",
                   "title": "Terapi",
-                  "description": "Informasi terapi menggunakan Stimel"
+                  "description": "Terapi Anda terkait Stimel"
+                },
+                {
+                  "id": "bisnis",
+                  "title": "Bisnis",
+                  "description": "Bisnis Anda terkait Stimel"
                 }
               ]
             }
@@ -116,44 +237,175 @@
       "transitions": {
         "penjelasan": "stimel_penjelasan",
         "cara_penggunaan": "stimel_cara_penggunaan",
-        "terapi": "stimel_terapi"
+        "cara penggunaan": "stimel_cara_penggunaan",
+        "konsultasi": "stimel_konsultasi",
+        "keluhan": "stimel_keluhan",
+        "terapi": "stimel_terapi",
+        "bisnis": "stimel_bisnis"
       },
       "fallback": "stimel_menu"
+    },
+    "stimel_penjelasan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Stimel-03 ini teknologi rehabilitasi yang canggih banget! 🔬⚡\n\nBayangkan: Alat yang bisa baca sinyal otot kamu secara real-time, terus langsung sesuaikan stimulasi listriknya. Keren kan?\n\nKombinasi:\n• FES/NMES (stimulasi listrik)\n• EMG biofeedback (baca sinyal otot)\n\nHasilnya?\n✓ Pemulihan lebih cepat\n✓ Neuroplastisitas meningkat\n✓ Pasien jadi lebih aktif pas terapi\n\nJadi gak cuma pasif, tapi pasien ikut berperan aktif dalam pemulihan! 💪",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_penjelasan"
+    },
+    "stimel_cara_penggunaan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Cara pakainya gampang kok, dipandu terapis tentunya! 👨‍⚕️\n\n1️⃣ Pasang elektroda di area otot yang mau direhabilitasi\n\n2️⃣ Terapis pilih mode:\n   • NMES standar\n   • Biofeedback adaptif\n\n3️⃣ Perangkat baca sinyal EMG kamu → tampil di layar → berikan stimulasi yang pas\n\n4️⃣ Dipakai pas sesi rehabilitasi rutin\n\n5️⃣ Terapis monitor terus buat adjust intensitas & target\n\nJadi semua terukur dan terpantau dengan baik! 📊",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_cara_penggunaan"
+    },
+    "stimel_konsultasi": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Pengen tau lebih detail? Yuk ngobrol! 💬\n\nKontak tim kita:\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTanyain apa aja, kita bantuin! 🙌",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_konsultasi"
+    },
+    "stimel_keluhan": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Stimel-03 cocok banget buat:\n\n🎯 Kondisi yang ditangani:\n• Rehabilitasi stroke\n• Cedera saraf & otak\n• Kelumpuhan sebagian\n• Gangguan neuromotor\n\n💪 Manfaat terapinya:\n✓ Kekuatan otot & rentang gerak meningkat\n✓ Fungsi motorik membaik\n✓ Aktivitas sehari-hari jadi lebih mudah\n✓ Gejala stroke berkurang\n✓ Pasien jadi lebih termotivasi & terlibat aktif\n\nHasilnya? Lebih efektif dari metode standar! 🌟",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_keluhan"
+    },
+    "stimel_terapi": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Butuh info terapi lebih lanjut?\n\nYuk diskusi sama tim ahli kita:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita bantuin kamu nemuin terapi yang sesuai! 💙",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_terapi"
+    },
+    "stimel_bisnis": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Tertarik kerjasama bisnis Stimel?\n\nAyo kita obrolin peluangnya:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita antusias ngobrolin ini sama kamu! 🤝",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "stimel_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "stimel_bisnis"
     },
     "akusehat_menu": {
       "type": "interactive_list",
       "message": {
-        "body": "Oke, anda memilih akusehat, berikut opsi yang bisa anda pilih:",
+        "body": "Mantap! Kamu pilih AkuSehat.AI ya 🤖\n\nAda beberapa hal yang bisa aku share:",
         "lists": {
           "button": "Pilih Opsi",
           "sections": [
             {
-              "title": "Informasi Produk",
+              "title": "Informasi Akusehat",
               "rows": [
                 {
                   "id": "penjelasan",
                   "title": "Penjelasan",
-                  "description": "Informasi lengkap tentang aplikasi Akusehat"
+                  "description": "Informasi lengkap tentang Akusehat"
                 },
                 {
                   "id": "cara_download",
                   "title": "Cara Download",
-                  "description": "Panduan download aplikasi Akusehat"
-                }
-              ]
-            },
-            {
-              "title": "Dukungan & Bisnis",
-              "rows": [
+                  "description": "Panduan download Akusehat"
+                },
+                {
+                  "id": "cara_penggunaan",
+                  "title": "Cara Penggunaan",
+                  "description": "Panduan penggunaan Akusehat"
+                },
                 {
                   "id": "bisnis",
                   "title": "Bisnis",
-                  "description": "Informasi kesempatan bisnis Akusehat"
-                },
-                {
-                  "id": "keluhan",
-                  "title": "Keluhan",
-                  "description": "Laporkan keluhan atau masalah aplikasi"
+                  "description": "Bisnis seputar Akusehat"
                 }
               ]
             }
@@ -163,186 +415,110 @@
       "transitions": {
         "penjelasan": "akusehat_penjelasan",
         "cara_download": "akusehat_cara_download",
-        "bisnis": "akusehat_bisnis",
-        "keluhan": "akusehat_keluhan"
+        "cara download": "akusehat_cara_download",
+        "cara_penggunaan": "akusehat_cara_penggunaan",
+        "cara penggunaan": "akusehat_cara_penggunaan",
+        "bisnis": "akusehat_bisnis"
       },
       "fallback": "akusehat_menu"
     },
-    "silverstream_penjelasan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User bertanya tentang penjelasan produk Silverstream. Berikan informasi lengkap tentang apa itu Silverstream, manfaat kesehatan, komposisi, dan keunggulan produk. Jelaskan secara detail namun mudah dipahami."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_penjelasan"
-    },
-    "silverstream_cara_penggunaan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User bertanya tentang cara penggunaan produk Silverstream. Berikan panduan lengkap cara minum, dosis, waktu yang tepat, kombinasi dengan makanan, dan tips penggunaan optimal."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_cara_penggunaan"
-    },
-    "silverstream_konsultasi": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User ingin konsultasi tentang Silverstream. Tanyakan kondisi kesehatan mereka, berikan saran penggunaan yang sesuai kondisi, dan rekomendasikan untuk berkonsultasi dengan dokter jika diperlukan."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_konsultasi"
-    },
-    "silverstream_keluhan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User melaporkan keluhan terkait produk Silverstream. Dengarkan keluhan mereka dengan empati, tanyakan detail gejala, berikan penjelasan penyebab mungkin, dan sarankan solusi atau alternatif."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_keluhan"
-    },
-    "silverstream_bisnis": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User tertarik dengan kesempatan bisnis Silverstream. Jelaskan sistem bisnis, keuntungan menjadi distributor, cara bergabung, dan support yang diberikan perusahaan."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_bisnis"
-    },
-    "stimel_penjelasan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User bertanya tentang penjelasan produk Stimel. Berikan informasi lengkap tentang apa itu Stimel, manfaat kesehatan untuk sistem kekebalan, komposisi, dan keunggulan produk."
-      },
-      "transitions": {
-        "*": "stimel_ai_chat"
-      },
-      "fallback": "stimel_penjelasan"
-    },
-    "stimel_cara_penggunaan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User bertanya tentang cara penggunaan produk Stimel. Berikan panduan lengkap cara minum, dosis harian, waktu yang tepat, dan tips penggunaan untuk hasil optimal."
-      },
-      "transitions": {
-        "*": "stimel_ai_chat"
-      },
-      "fallback": "stimel_cara_penggunaan"
-    },
-    "stimel_terapi": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User bertanya tentang terapi menggunakan Stimel. Jelaskan bagaimana Stimel dapat digunakan dalam terapi kesehatan, kombinasi dengan pengobatan lain, dan rekomendasi penggunaan untuk berbagai kondisi."
-      },
-      "transitions": {
-        "*": "stimel_ai_chat"
-      },
-      "fallback": "stimel_terapi"
-    },
     "akusehat_penjelasan": {
-      "type": "ai_generated",
+      "type": "interactive_button",
       "message": {
-        "context": "User bertanya tentang penjelasan aplikasi Akusehat. Jelaskan fitur-fitur aplikasi, manfaat untuk kesehatan, cara kerjanya, dan keunggulan dibanding aplikasi kesehatan lainnya."
+        "body": "AkuSehat.AI ini keren lho! 🤖✨\n\nBayangkan aja, cukup pake kamera smartphone kamu bisa cek:\n• Tekanan darah\n• Detak jantung\n• Saturasi oksigen\n• Level stres\n• Skor kebugaran\n\nSemua tanpa alat medis fisik! Teknologi AI yang ngukur biomarker tubuh kamu cuma lewat video scan wajah.\n\nCanggih kan? 📱💙",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
       },
       "transitions": {
-        "*": "akusehat_ai_chat"
+        "kembali": "akusehat_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
       },
       "fallback": "akusehat_penjelasan"
     },
     "akusehat_cara_download": {
-      "type": "ai_generated",
+      "type": "interactive_button",
       "message": {
-        "context": "User bertanya tentang cara download aplikasi Akusehat. Berikan panduan lengkap download dari Play Store/App Store, persyaratan sistem, dan langkah-langkah instalasi."
+        "body": "Jadi gini, AkuSehat.AI belum tersedia bebas di app store ya 📱\n\nAkses platformnya lewat:\n• Rumah sakit/klinik partner\n• Institusi yang kerjasama dengan AkuSehat.AI\n\nKamu bisa dapet akses melalui fasilitas kesehatan yang udah jadi mitra.\n\nMau tau institusi mana aja yang udah kerjasama? Kontak kami yuk! 💬",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
       },
       "transitions": {
-        "*": "akusehat_ai_chat"
+        "kembali": "akusehat_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
       },
       "fallback": "akusehat_cara_download"
     },
-    "akusehat_bisnis": {
-      "type": "ai_generated",
+    "akusehat_cara_penggunaan": {
+      "type": "interactive_button",
       "message": {
-        "context": "User tertarik dengan kesempatan bisnis Akusehat. Jelaskan peluang bisnis aplikasi kesehatan, sistem partnership, keuntungan, dan cara bergabung sebagai mitra bisnis."
+        "body": "Cara pakainya simple banget! 😊\n\n1️⃣ Daftar dulu dengan data dasar:\n   • Nama, email, telepon\n   • Tinggi & berat badan\n\n2️⃣ Buka platform dan siap-siap scan wajah\n\n3️⃣ Arahkan kamera ke wajah kamu\n\n4️⃣ AI akan analisis video scan-nya\n\n5️⃣ Tadaaa! Hasil biomarker & skor kesehatan kamu langsung muncul 📊\n\nPraktis kan? Semua lewat kamera aja! 📱✨",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
       },
       "transitions": {
-        "*": "akusehat_ai_chat"
+        "kembali": "akusehat_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
+      },
+      "fallback": "akusehat_cara_penggunaan"
+    },
+    "akusehat_bisnis": {
+      "type": "interactive_button",
+      "message": {
+        "body": "Tertarik partnership dengan AkuSehat.AI?\n\nAyo kita diskusi peluang bisnisnya:\n\n📞 WhatsApp: +62 812-3456-7890\n📧 Email: info@example.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita excited banget buat kolaborasi! 🚀",
+        "buttons": [
+          {
+            "id": "kembali",
+            "title": "Kembali"
+          },
+          {
+            "id": "menu_utama",
+            "title": "Ke Menu Utama"
+          }
+        ]
+      },
+      "transitions": {
+        "kembali": "akusehat_menu",
+        "menu_utama": "greeting",
+        "ke menu utama": "greeting"
       },
       "fallback": "akusehat_bisnis"
-    },
-    "akusehat_keluhan": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User melaporkan keluhan terkait aplikasi Akusehat. Dengarkan masalah mereka dengan empati, tanyakan detail error/bug, berikan solusi troubleshooting, dan bantu melaporkan ke tim teknis."
-      },
-      "transitions": {
-        "*": "akusehat_ai_chat"
-      },
-      "fallback": "akusehat_keluhan"
-    },
-    "silverstream_ai_chat": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User sedang dalam percakapan lanjutan tentang produk Silverstream. Mereka sudah tahu informasi dasar. Berikan respons yang lebih detail, personal, dan membantu terkait pertanyaan kesehatan atau penggunaan produk."
-      },
-      "transitions": {
-        "*": "silverstream_ai_chat"
-      },
-      "fallback": "silverstream_ai_chat"
-    },
-    "stimel_ai_chat": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User sedang dalam percakapan lanjutan tentang produk Stimel. Mereka sudah tahu informasi dasar. Berikan respons yang lebih detail tentang kesehatan kekebalan tubuh dan penggunaan produk Stimel."
-      },
-      "transitions": {
-        "*": "stimel_ai_chat"
-      },
-      "fallback": "stimel_ai_chat"
-    },
-    "akusehat_ai_chat": {
-      "type": "ai_generated",
-      "message": {
-        "context": "User sedang dalam percakapan lanjutan tentang aplikasi Akusehat. Mereka sudah tahu informasi dasar. Berikan respons yang lebih detail tentang fitur aplikasi dan manfaat kesehatan digital."
-      },
-      "transitions": {
-        "*": "akusehat_ai_chat"
-      },
-      "fallback": "akusehat_ai_chat"
-    },
-    "customer_service": {
-      "type": "text",
-      "message": {
-        "text": "👨‍💼 *Customer Service SilverStream Sehat*\n\nTim Customer Service kami siap membantu Anda 24/7 dengan semua pertanyaan tentang produk kesehatan SilverStream.\n\n📞 Kontak Kami:\n• WhatsApp: +62 812-3456-7890\n• Email: support@silverstreamsehat.com\n• Live Chat: Tersedia 08:00 - 22:00 WIB\n\n💬 Silakan tulis pertanyaan atau kendala yang Anda alami, tim kami akan merespons secepat mungkin!"
-      },
-      "transitions": {
-        "*": "customer_service"
-      },
-      "fallback": "customer_service"
     }
   },
   "keywords": {
     "menu": "greeting",
     "help": "greeting",
     "bantuan": "greeting",
-    "kembali": "greeting",
-    "reset": "greeting",
-    "cs": "customer_service",
-    "customer": "customer_service",
-    "support": "customer_service",
-    "produk": "greeting",
-    "kesehatan": "greeting"
+    "reset": "greeting"
   },
   "fallback_responses": {
-    "unknown_input": "Maaf, saya tidak mengerti input Anda. Silakan pilih opsi yang tersedia dari menu, ketik 'menu' untuk kembali ke menu utama, atau 'cs' untuk menghubungi customer service.",
-    "error": "Terjadi kesalahan dalam sistem. Silakan coba lagi, ketik 'menu' untuk kembali ke menu utama, atau 'cs' untuk mendapatkan bantuan dari customer service."
+    "unknown_input": "Hmm, aku kurang ngerti nih 🤔\n\nKetik 'menu' buat balik ke menu utama ya!",
+    "error": "Oops, ada error nih! 😅\n\nCoba lagi atau ketik 'menu' ya!"
   }
 }
