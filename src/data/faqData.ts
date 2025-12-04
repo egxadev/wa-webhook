@@ -11,12 +11,12 @@ import { FAQQuestion } from '../types';
 export const silverstreamFAQs: FAQQuestion[] = [
   {
     id: 'faq_ss_manfaat',
-    question: 'Apa manfaat utama?', // 20 chars
+    question: 'Apa manfaat utama?', // 18 chars
     answer: 'Menghancurkan biofilm untuk mendukung pembersihan luka yang efektif.\nMempercepat penyembuhan dan mendukung pencegahan infeksi.\nLembut pada luka dengan pH alami.\nTidak beracun dan tidak menyebabkan iritasi.\nTidak mengandung Steroid atau Antibiotik.\nTidak mengandung Alkohol atau Iodin.\nTidak merusak jaringan sehat.\nRamah lingkungan - tidak memerlukan pembuangan khusus.'
   },
   {
     id: 'faq_ss_komposisi',
-    question: 'Apa kandungannya?', // 18 chars
+    question: 'Apa kandungannya?', // 17 chars
     answer: '-Water for Injection (air steril)\n-Gliserol\n-Tween-20 (surfaktan)\n-TRIS Buffer (penyeimbang pH)\n-Menthol\n-Silver Nitrate 0,01% → menghasilkan ion perak'
   },
   {
@@ -26,17 +26,17 @@ export const silverstreamFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_ss_durasi_efek',
-    question: 'Berapa lama efeknya?', // 21 chars
+    question: 'Berapa lama efeknya?', // 20 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
     id: 'faq_ss_diabetes',
-    question: 'Aman untuk luka diabetes?', // 24 chars ✓
+    question: 'Aman untuk diabetes?', // 20 chars
     answer: 'SilverStream umumnya aman digunakan pada penderita diabetes karena diformulasikan untuk luka kronis termasuk luka diabetes\n -Mengandung ion perak yang membantu kontrol infeksi & mendukung penyembuhan\nNamun, penggunaan untuk luka diabetes sebaiknya didampingi tenaga medis karena luka diabetes berisiko infeksi & sirkulasi buruk\n -Cocok sebagai bagian dari perawatan luka, bukan satu-satunya terapi\n\nRingkasnya:\n Aman, tapi harus dalam pengawasan medis bila luka diabetes sedang atau berat'
   },
   {
     id: 'faq_ss_anak',
-    question: 'Bisa untuk anak-anak?', // 22 chars
+    question: 'Bisa untuk anak-anak?', // 21 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
@@ -61,7 +61,7 @@ export const silverstreamFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_ss_interaksi_obat',
-    question: 'Bisa dengan obat lain?', // 23 chars
+    question: 'Bisa dengan obat lain?', // 22 chars
     answer: 'Oops belum ada info yang valid!'
   }
 ];
@@ -82,7 +82,7 @@ export const stimelFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_st_kontraindikasi',
-    question: 'Ada kontraindikasi?', // 20 chars
+    question: 'Ada kontraindikasi?', // 19 chars
     answer: 'Pacemaker, kehamilan, dll.\n\nUpdate dengan info yang valid!'
   },
   {
@@ -97,17 +97,17 @@ export const stimelFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_st_frekuensi',
-    question: 'Berapa kali seminggu?', // 22 chars
+    question: 'Berapa kali seminggu?', // 21 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
     id: 'faq_st_hasil',
-    question: 'Kapan hasil terlihat?', // 22 chars
+    question: 'Kapan hasil terlihat?', // 21 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
     id: 'faq_st_lansia',
-    question: 'Bisa untuk lansia?', // 19 chars
+    question: 'Bisa untuk lansia?', // 18 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
@@ -163,12 +163,12 @@ export const akusehatFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_as_device',
-    question: 'Device apa saja?', // 17 chars
+    question: 'Device apa saja?', // 16 chars
     answer: 'Saat ini kami masih tersedia untuk Android saja'
   },
   {
     id: 'faq_as_dokter',
-    question: 'Bisa kirim ke dokter?', // 22 chars
+    question: 'Bisa kirim ke dokter?', // 21 chars
     answer: 'Oops belum ada info yang valid!'
   },
   {
@@ -178,12 +178,12 @@ export const akusehatFAQs: FAQQuestion[] = [
   },
   {
     id: 'faq_as_validasi',
-    question: 'Tervalidasi medis?', // 19 chars
+    question: 'Tervalidasi medis?', // 18 chars
     answer: 'Opps belum ada info yang valid!'
   },
   {
     id: 'faq_as_riwayat',
-    question: 'Bisa simpan riwayat?', // 21 chars
+    question: 'Bisa simpan riwayat?', // 20 chars
     answer: 'Opps belum ada info yang valid!'
   }
 ];

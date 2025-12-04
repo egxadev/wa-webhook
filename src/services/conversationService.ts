@@ -91,7 +91,7 @@ export class ConversationService {
         const rows = [
           ...moreFAQs.map(f => ({
             id: f.id,
-            title: f.question,
+            title: f.question.length > 24 ? f.question.substring(0, 24) : f.question,
             description: f.question
           })),
           {
@@ -361,23 +361,23 @@ export class ConversationService {
    generateFAQListMessage(userId: string, stateKey: string, product: ProductType, baseContent: string): Message {
      const faqs = this.faqManager.getRandomFAQs(userId, product, 3);
      
-     const rows = [
-       ...faqs.map(faq => ({
-         id: faq.id,
-         title: faq.question, // Already max 24 chars
-         description: faq.question
-       })),
-       {
-         id: 'kembali',
-         title: 'Kembali',
-         description: 'Kembali ke menu sebelumnya'
-       },
-       {
-         id: 'menu_utama',
-         title: 'Ke Menu Utama',
-         description: 'Kembali ke menu utama'
-       }
-     ];
+    const rows = [
+      ...faqs.map(faq => ({
+        id: faq.id,
+        title: faq.question.length > 24 ? faq.question.substring(0, 24) : faq.question,
+        description: faq.question
+      })),
+      {
+        id: 'kembali',
+        title: 'Kembali',
+        description: 'Kembali ke menu sebelumnya'
+      },
+      {
+        id: 'menu_utama',
+        title: 'Ke Menu Utama',
+        description: 'Kembali ke menu utama'
+      }
+    ];
 
      return {
        type: MessageType.LIST,
