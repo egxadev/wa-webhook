@@ -131,7 +131,7 @@
     "silverstream_konsultasi": {
       "type": "interactive_button",
       "message": {
-        "body": "Mau konsultasi langsung sama dokter? Boleh banget! 👨‍⚕️\n\nHubungi tim kami:\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kita siap bantu kamu! 💬",
+        "body": "Mau konsultasi langsung sama dokter? Boleh banget! 👨‍⚕️\n\nHubungi tim kami: Dr. Renauld Koswiranagara\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTim kami siap bantu kamu! 💬",
         "buttons": [
           {
             "id": "kembali",
@@ -153,7 +153,7 @@
     "silverstream_keluhan": {
       "type": "interactive_button",
       "message": {
-        "body": "Ada keluhan? Tenang, kita dengerin kok! 🙏\n\nFeedback kamu penting banget buat kita. Yuk cerita:\n\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita bakal bantu cariin solusi terbaik! 💪",
+        "body": "Ada keluhan? Tenang, kami dengerin kok! 🙏\n\nFeedback kamu penting banget buat kami. Yuk cerita:\n\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKami bakal bantu cariin solusi terbaik! 💪",
         "buttons": [
           {
             "id": "kembali",
@@ -215,7 +215,7 @@
     "silverstream_bisnis_info_distributor": {
       "type": "interactive_button",
       "message": {
-        "body": "Info Distributor & Reseller SilverStream 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk end user\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 811-140-504 📞",
+        "body": "Info Distributor & Reseller SilverStream 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk end user\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 821-2432-5237 (Dito Kumarasakti) 📞",
         "buttons": [
           {
             "id": "kembali",
@@ -237,7 +237,7 @@
     "silverstream_bisnis_jadi_mitra": {
       "type": "interactive_button",
       "message": {
-        "body": "Tertarik jadi Distributor atau Reseller? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing dari kami\n• Training produk gratis\n• Sistem bisnis yang proven\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n\nTim kita excited banget buat ngobrol sama kamu! 🚀",
+        "body": "Tertarik jadi Distributor atau Reseller? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing dari kami\n• Training produk gratis\n• Sistem bisnis yang proven\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 821-2432-5237 (Dito Kumarasakti)\n📧 Email: kontaksilverstream@gmail.com\n\nTim kami excited banget buat ngobrol sama kamu! 🚀",
         "buttons": [
           {
             "id": "kembali",
@@ -364,7 +364,7 @@
     "stimel_konsultasi": {
       "type": "interactive_button",
       "message": {
-        "body": "Pengen tau lebih detail? Yuk ngobrol! 💬\n\nKontak tim kita:\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTanyain apa aja, kita bantuin! 🙌",
+        "body": "Pengen tau lebih detail? Yuk ngobrol! 💬\n\nKontak tim kami: Dr. Renauld Koswiranagara\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nTanyain apa aja, kami bantuin! 🙌",
         "buttons": [
           {
             "id": "kembali",
@@ -408,7 +408,7 @@
     "stimel_terapi": {
       "type": "interactive_button",
       "message": {
-        "body": "Butuh info terapi lebih lanjut?\n\nYuk diskusi sama tim ahli kita:\n\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita bantuin kamu nemuin terapi yang sesuai! 💙",
+        "body": "Butuh info terapi lebih lanjut?\n\nYuk diskusi sama tim ahli kami:\n\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKami bantuin kamu nemuin terapi yang sesuai! 💙",
         "buttons": [
           {
             "id": "kembali",
@@ -470,7 +470,7 @@
     "stimel_bisnis_info_distributor": {
       "type": "interactive_button",
       "message": {
-        "body": "Info Distributor & Reseller Stimel-03 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian alat Stimel dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk rumah sakit/klinik\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 811-140-504 📞",
+        "body": "Info Distributor & Reseller Stimel-03 📦\n\nKami punya jaringan distributor dan reseller yang tersebar di berbagai kota di Indonesia!\n\n*Distributor:*\nUntuk pembelian alat Stimel dalam jumlah besar dan kerjasama B2B\n\n*Reseller:*\nMelayani pembelian retail untuk rumah sakit/klinik\n\nMau tau lebih lanjut atau cari yang terdekat di kotamu?\n\nHub WhatsApp: +62 821-2432-5237 (Dito Kumarasakti) 📞",
         "buttons": [
           {
             "id": "kembali",
@@ -492,7 +492,7 @@
     "stimel_bisnis_jadi_mitra": {
       "type": "interactive_button",
       "message": {
-        "body": "Tertarik jadi Distributor atau Reseller Stimel? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing & training\n• Demo unit tersedia\n• After-sales support\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n\nTim kita excited banget buat ngobrol sama kamu! 🚀",
+        "body": "Tertarik jadi Distributor atau Reseller Stimel? Mantap! 🤝\n\n*Keuntungan Jadi Mitra:*\n• Margin keuntungan menarik\n• Support marketing & training\n• Demo unit tersedia\n• After-sales support\n\nYuk diskusi peluang bisnisnya:\n\n📞 Partnership WhatsApp: +62 821-2432-5237 (Dito Kumarasakti)\n📧 Email: kontaksilverstream@gmail.com\n\nTim kami excited banget buat ngobrol sama kamu! 🚀",
         "buttons": [
           {
             "id": "kembali",
@@ -625,7 +625,7 @@
     "akusehat_bisnis": {
       "type": "interactive_button",
       "message": {
-        "body": "Tertarik partnership dengan AkuSehat.AI?\n\nAyo kita diskusi peluang bisnisnya:\n\n📞 WhatsApp: +62 811-140-504\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKita excited banget buat kolaborasi! 🚀",
+        "body": "Tertarik partnership dengan AkuSehat.AI?\n\nAyo kami diskusi peluang bisnisnya:\n\n📞 WhatsApp: +62 821-2432-5237 (Dito Kumarasakti)\n📧 Email: kontaksilverstream@gmail.com\n⏰ Jam 08.00 - 17.00 WIB\n\nKami excited banget buat kolaborasi! 🚀",
         "buttons": [
           {
             "id": "kembali",
