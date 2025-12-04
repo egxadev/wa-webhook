@@ -92,7 +92,7 @@ export class ConversationService {
           ...moreFAQs.map(f => ({
             id: f.id,
             title: f.question.length > 24 ? f.question.substring(0, 24) : f.question,
-            description: f.question
+            description: ' '
           })),
           {
             id: 'kembali',
