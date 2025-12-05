@@ -34,9 +34,9 @@ app.post('/webhook', async (req, res) => {
     const payload: WebhookPayload = req.body;
     
     console.log('\n=== Webhook Received ===');
-    console.log('Time:', new Date().toISOString());
-    console.log('Event:', payload.data_event);
-    console.log('========================\n');
+    console.log('Timestamp:', new Date().toISOString());
+    console.log('Body:', JSON.stringify(req.body, null, 2));
+    console.log('========================');
 
     // Only process customer messages
     if (!isCustomerMessage(payload)) {

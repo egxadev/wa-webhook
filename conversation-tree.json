@@ -185,17 +185,17 @@
                 {
                   "id": "info_distributor",
                   "title": "Info Distributor",
-                  "description": "Informasi tentang distributor dan reseller"
+                  "description": "Informasi distributor dan reseller SilverStream"
                 },
                 {
                   "id": "cara_pembelian",
                   "title": "Cara Pembelian",
-                  "description": "Beli produk untuk kebutuhan kamu"
+                  "description": "Beli produk SilverStream untuk kebutuhan kamu"
                 },
                 {
                   "id": "jadi_mitra",
                   "title": "Jadi Mitra",
-                  "description": "Cara jadi distributor/reseller"
+                  "description": "Cara jadi distributor/reseller SilverStream"
                 }
               ]
             }
@@ -440,17 +440,17 @@
                 {
                   "id": "info_distributor",
                   "title": "Info Distributor",
-                  "description": "Informasi tentang distributor dan reseller"
+                  "description": "Informasi distributor dan reseller Stimel"
                 },
                 {
                   "id": "cara_pembelian",
                   "title": "Cara Pembelian",
-                  "description": "Beli produk untuk kebutuhan kamu"
+                  "description": "Beli produk Stimel untuk kebutuhan kamu"
                 },
                 {
                   "id": "jadi_mitra",
                   "title": "Jadi Mitra",
-                  "description": "Cara jadi distributor/reseller"
+                  "description": "Cara jadi distributor/reseller Stimel"
                 }
               ]
             }
