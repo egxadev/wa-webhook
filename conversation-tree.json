@@ -53,6 +53,11 @@
                   "id": "bisnis",
                   "title": "Bisnis",
                   "description": "Bisnis Anda terkait Silverstream"
+                },
+                {
+                  "id": "cara_pembelian",
+                  "title": "Cara Pembelian",
+                  "description": "Beli produk SilverStream untuk kebutuhan kamu"
                 }
               ]
             },
@@ -80,7 +85,9 @@
         "cara penggunaan": "silverstream_cara_penggunaan",
         "konsultasi": "silverstream_konsultasi",
         "keluhan": "silverstream_keluhan",
-        "bisnis": "silverstream_bisnis"
+        "bisnis": "silverstream_bisnis",
+        "cara_pembelian": "bisnis_form_start",
+        "cara pembelian": "bisnis_form_start"
       },
       "fallback": "silverstream_menu"
     },
@@ -188,11 +195,6 @@
                   "description": "Informasi distributor dan reseller SilverStream"
                 },
                 {
-                  "id": "cara_pembelian",
-                  "title": "Cara Pembelian",
-                  "description": "Beli produk SilverStream untuk kebutuhan kamu"
-                },
-                {
                   "id": "jadi_mitra",
                   "title": "Jadi Mitra",
                   "description": "Cara jadi distributor/reseller SilverStream"
@@ -205,8 +207,6 @@
       "transitions": {
         "info_distributor": "silverstream_bisnis_info_distributor",
         "info distributor": "silverstream_bisnis_info_distributor",
-        "cara_pembelian": "bisnis_form_start",
-        "cara pembelian": "bisnis_form_start",
         "jadi_mitra": "silverstream_bisnis_jadi_mitra",
         "jadi mitra": "silverstream_bisnis_jadi_mitra"
       },
@@ -285,6 +285,11 @@
                   "id": "bisnis",
                   "title": "Bisnis",
                   "description": "Bisnis Anda terkait Stimel"
+                },
+                {
+                  "id": "cara_pembelian",
+                  "title": "Cara Pembelian",
+                  "description": "Beli produk Stimel untuk kebutuhan kamu"
                 }
               ]
             },
@@ -313,7 +318,9 @@
         "konsultasi": "stimel_konsultasi",
         "keluhan": "stimel_keluhan",
         "terapi": "stimel_terapi",
-        "bisnis": "stimel_bisnis"
+        "bisnis": "stimel_bisnis",
+        "cara_pembelian": "bisnis_form_start",
+        "cara pembelian": "bisnis_form_start"
       },
       "fallback": "stimel_menu"
     },
@@ -443,11 +450,6 @@
                   "description": "Informasi distributor dan reseller Stimel"
                 },
                 {
-                  "id": "cara_pembelian",
-                  "title": "Cara Pembelian",
-                  "description": "Beli produk Stimel untuk kebutuhan kamu"
-                },
-                {
                   "id": "jadi_mitra",
                   "title": "Jadi Mitra",
                   "description": "Cara jadi distributor/reseller Stimel"
@@ -460,8 +462,6 @@
       "transitions": {
         "info_distributor": "stimel_bisnis_info_distributor",
         "info distributor": "stimel_bisnis_info_distributor",
-        "cara_pembelian": "bisnis_form_start",
-        "cara pembelian": "bisnis_form_start",
         "jadi_mitra": "stimel_bisnis_jadi_mitra",
         "jadi mitra": "stimel_bisnis_jadi_mitra"
       },
